@@ -6,6 +6,7 @@ public class Facture
 {
 	String Client;
 	int montant;
+	static 
 	
 	/**
 	 * Retourne le client à qui est adressée la facture..
@@ -44,7 +45,7 @@ public class Facture
 	
 	public LocalDate getDate()
 	{
-		return null;
+		return LocalDate.now();
 	}
 
 	/**
