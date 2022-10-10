@@ -4,7 +4,6 @@ import java.time.LocalDate;
 
 public class Facture
 {
-
 	/**
 	 * Retourne le client à qui est adressée la facture..
 	 * @return le client.
@@ -22,7 +21,7 @@ public class Facture
 	
 	public int getMontant()
 	{
-		return null;
+		return 0;
 	}
 
 	/**
@@ -42,7 +41,7 @@ public class Facture
 	
 	public LocalDate getDate()
 	{
-		return LocalDate.now();
+		return null;
 	}
 
 	/**
