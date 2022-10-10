@@ -48,7 +48,7 @@ public class Client
 	{
 		this.montant = montant;
 		
-		return null;
+		return createFacture (montant);
 	}
 	
 	/**
