@@ -91,7 +91,8 @@ public class Client
 
 	public List<Facture> facturesReglees()
 	{
-		return null;
+		ArrayList<Facture> reglee = new ArrayList <>();
+		return reglee;
 	}
 	
 
@@ -101,7 +102,8 @@ public class Client
 	 */
 	public static List<Client> tous()
 	{
-		return null;
+		ArrayList<Client> TsClient = new ArrayList <>();
+		return TsClient;
 	}
 	
 	/**
