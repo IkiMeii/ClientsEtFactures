@@ -43,7 +43,7 @@ public class Facture
 	
 	public boolean estReglee()
 	{
-		return true;
+		return false;
 	}
 
 	/**
@@ -62,7 +62,7 @@ public class Facture
 	
 	public void delete()
 	{
-		
+		client.delete();
 	}
 	
 	/**
