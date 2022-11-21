@@ -1,13 +1,17 @@
 package metier;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
+import metier.Facture;
+
 public class Client
 {
-	String nom;
-	int montant;
+	private String nom;
+	private ArrayList<Facture> factures = new ArrayList<>();
+
 	/** 
 	 * Crée un client.
 	 * @param nom le nom du client. 
@@ -46,9 +50,14 @@ public class Client
 	
 	public Facture createFacture(int montant)
 	{
-		this.montant = montant;
-		
-		return null;
+		Facture facture = new Facture(this, montant);
+		add(facture);
+		return facture;
+	}
+	
+	void add(Facture commande)
+	{
+		factures.add(commande);
 	}
 	
 	/**
@@ -106,9 +115,12 @@ public class Client
 	/**
 	 * Supprime le client.
 	 */
-	
+	void remove(Facture commande)
+	{
+		factures.remove(commande);
+	}
 	public void delete()
 	{
-		nom = null;
+		
 	}
 }

@@ -2,16 +2,28 @@ package metier;
 
 import java.time.LocalDate;
 
+import metier.Client;
+import metier.Facture;
+
 public class Facture
 {
+	private Client client;
+	private int montant;
+	private LocalDate date;
 	/**
 	 * Retourne le client à qui est adressée la facture..
 	 * @return le client.
 	 */
-	
+	Facture(Client client, int montant)
+	{
+		this.client = client;
+		this.montant = montant;
+		this.date = LocalDate.now();
+	}
+
 	public Client getClient()
 	{
-		return null;
+		return client;
 	}
 
 	/**
@@ -21,7 +33,7 @@ public class Facture
 	
 	public int getMontant()
 	{
-		return 0;
+		return montant;
 	}
 
 	/**
@@ -41,7 +53,7 @@ public class Facture
 	
 	public LocalDate getDate()
 	{
-		return null;
+		return date;
 	}
 
 	/**
@@ -50,6 +62,7 @@ public class Facture
 	
 	public void delete()
 	{
+		
 	}
 	
 	/**
