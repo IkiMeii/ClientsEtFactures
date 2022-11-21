@@ -67,7 +67,8 @@ public class Client
 
 	public List<Facture> getFactures()
 	{
-		return null;
+		ArrayList<Facture> copy = new ArrayList <>();
+		return copy;
 	}
 	
 	/**
@@ -99,7 +100,7 @@ public class Client
 
 	public List<Facture> facturesReglees()
 	{
-		return null;
+		return facturesReglees();
 	}
 	
 
@@ -109,7 +110,7 @@ public class Client
 	 */
 	public static List<Client> tous()
 	{
-		return null;
+		return tous();
 	}
 	
 	/**
