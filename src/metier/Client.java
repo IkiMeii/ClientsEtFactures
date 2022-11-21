@@ -1,16 +1,14 @@
 package metier;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Scanner;
 
-import metier.Facture;
+
 
 public class Client
 {
-	private String nom;
-	private ArrayList<Facture> factures = new ArrayList<>();
+	String nom;
+	ArrayList<Facture> factures = new ArrayList<>();
 
 	/** 
 	 * Crée un client.
