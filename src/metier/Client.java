@@ -4,11 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
 public class Client
 {
-	String nom;
-	ArrayList<Facture> factures = new ArrayList<>();
+	private String nom;
+	private ArrayList<Facture> factures = new ArrayList<>();
 
 	/** 
 	 * Crée un client.
